@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="utf-8">
+		<title>Mesa de Jogos CDCC</title>
+
+		<link rel="stylesheet" type="text/css" href="_css/index.css">
+		<script src="_js/index.js"></script>
+
+	</head>
+
+	<body id="test">
+		<div id="background">
+			<header>
+			</header>
+			<nav class="menu">
+				<ul>
+					<li onclick="mudaConteudo('jogos')" ><a id="btJogos"><label for="btJogos">Jogos</label></a></li>
+					<li onclick="mudaConteudo('historinhas')"><a id="btIndex"><label for="btIndex">Historinhas</label></a></li>
+					<li onclick="mudaConteudo('colorir')"><a id="btColorir"><label for="btColorir">Colorir</label></a></li>
+				</ul>
+			</nav>
+			<nav>
+				<img src="" id="esquerda" onclick="passarTela(0)">
+				<img src="_images/direita.gif" id="direita" onclick="passarTela(1)">
+			</nav>
+			
+			<div class="conteudo" id="conteudo_interativo" >
+
+				<figure ><img src="_images/_historinhas/bela-adormecida.jpg" class="item" id="tela1" onclick="seleciona(this.src)" /><figcaption id="nomeTela1">Bela Adormecida</figcaption></figure><figure><img src="_images/_historinhas/chapeuzinho-vermelho.jpg" class="item" id="tela2" onclick="seleciona(this.src)" /><figcaption id="nomeTela2" >Chapeuzinho Vermelho</figcaption></figure><figure><img src="_images/_historinhas/o-principe-sapo.jpg" class="item" id="tela3" onclick="seleciona(this.src)" /><figcaption id="nomeTela3" >Príncipe Sapo</figcaption></figure><figure><img src="_images/_historinhas/pinoquio.jpg" class="item" id="tela4" onclick="seleciona(this.src)" /><figcaption id="nomeTela4" >Pinóquio</figcaption></figure><figure><img src="_images/_historinhas/alladin-e-a-lampada-maravilhosa.jpg" class="item" id="tela5" onclick="seleciona(this.src)" /><figcaption id="nomeTela5" >Alladin</figcaption></figure><figure><img src="_images/_historinhas/a-pequena-sereia.jpg" class="item" id="tela6" onclick="seleciona(this.src)" /><figcaption id="nomeTela6" >Pequena Sereia</figcaption></figure>
+			
+			</div>
+			
+		</div>
+	</body>
+
+</html>
